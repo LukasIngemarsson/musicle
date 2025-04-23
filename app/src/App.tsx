@@ -17,6 +17,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Learn from "./pages/Learn";
+import SearchSongs from "./pages/SearchSongs";
 
 function App() {
   const backgroundCSS = "bg-primary bg-center absolute w-full h-full";
@@ -28,6 +29,7 @@ function App() {
     "Sign Up",
     "Login",
     "Home",
+    "Song Search",
     "Learn",
     "Profile",
     "Sign Out",
@@ -61,6 +63,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/profile/:username" element={<Profile />} />
         <Route path="/learn" element={<Learn />} />
+        <Route path="/song-search" element={<SearchSongs />} />
       </Routes>
     </Router>
   );
